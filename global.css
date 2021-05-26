@@ -1,0 +1,469 @@
+*,*:before, * :after{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+    
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: #fff;
+}
+
+.titulo{
+    background-image: url("IMG/Fondo.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.titulo2{
+    background-image: linear-gradient(120deg, #75a93a6c 0%, #0e5e335e 100%), url("IMG/Fondo.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+
+.titulo h1{
+    padding: 100px 10px;
+    font-size: 48px;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+}
+
+.contenedor{
+    width: 95%;
+    max-width: 1000px;
+    margin: auto;
+    padding: 30px 0 30px 0;
+}
+
+.flex{
+    display: flex;
+}
+
+.contenedorb{
+    width: 40%;
+    max-width: 1000px;
+    min-width: 300px;
+    margin: auto;
+    padding: 30px 0 30px 0;
+}
+
+.slider, .menuslides{
+    list-style: none;
+    margin: 0;
+}
+
+.cajas{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.cajas h2{
+    color: #0E5E33;
+}
+
+.cajas p{
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+.btn{
+    margin: 30px 0;
+}
+
+.btnverde{
+    background-color: #75A93A;
+    border-radius: 3px;
+    padding: 10px 40px;
+    color: #0E5E33;
+}
+
+
+.cajas img{
+    width: 100%;
+}
+
+.espacio_cajas {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.texto_cajas{
+    width: 400px;
+    background-color: aqua;
+}
+
+.espacio_cajasb{
+    max-width: 50%;
+}
+
+.zonaverde{
+    margin-top: 80px;
+    color: #fff;
+    font-size: 25px;
+    text-align: center;
+}
+
+.zonaverde h1{
+    padding: 30px 0 0 0;
+}
+
+.zonaverde h2{
+    padding-bottom: 30px;
+}
+
+.arboles_donantes img{
+    max-width: 300px;
+}
+
+.titulosverdes{
+    color: #0E5E33;
+    text-align: center; 
+    font-size: 24px;
+}
+
+.lineas{
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    color: #0E5E33;
+    margin: 0;
+    font-style: bold;
+    font-size: 48px;
+    text-transform: uppercase;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-color: #0E5E33;
+    -webkit-text-stroke-width: 2px;
+}
+
+.nomarging{
+   margin-top: 40px;
+    margin-bottom: -30px;
+}
+
+.auto{
+    margin: 5px auto; 
+}
+
+.wrap{
+    flex-wrap: wrap;
+}
+.cards{
+    margin: 5px auto;
+    width: 300px;
+    border-radius: 8px;
+    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.2);
+}
+
+.cards img{
+    width: 100%;
+}
+
+.margen{
+    margin: 8px 5px;
+}
+
+h2.card{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+p.card{
+    font-size: 12px;
+    padding-bottom: 10px;
+}
+
+.centro{
+    align-items: center;
+}
+
+.lado_b{
+    width: 50%;
+} 
+
+.lado_c{
+    width: 400px;
+} 
+
+.lado_c img{
+    width: 400px;
+}
+
+.lado_b img{
+    width: 400px;
+}
+
+.donantes{
+    display: flex;
+    margin: auto;
+    background-color: #75A93A;
+    border-radius: 8px;
+    box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 10px;
+    width: 70%;
+}
+
+.donantesm{
+    margin-top: -120px;
+}
+
+.contenedor h2{
+    width: 100%;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.donantes img{
+    min-width: 300px;
+    max-height: 280px;
+}
+
+.listadonantes ul{
+    list-style: none;
+    padding: 0 0 0 20px;
+    color: #fff;
+    line-height: 28px;    
+}
+
+.contacto{
+    background-color: #0E5E33;
+}
+
+.contactocon{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.contactocon img{
+    max-width: 300px;
+}
+
+.contactocon p{
+    color: #fff;
+    padding: 10px 10px;
+}
+
+.redes{
+    margin: 10px 0;
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.iconoszv{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.iconoszv img{
+    max-width: 200px;
+}
+
+.iconoszv p{
+    text-transform: uppercase;
+}
+
+.zonaverde h1, .zonaverde h2{
+    text-transform: uppercase;
+}
+
+.space h2{
+    padding: 30px;
+}
+
+.busqueda{
+    margin:40px auto;
+    max-width: 800px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.busqueda input{
+    width: 60%;
+    height: 40px;
+    margin: auto 0;
+    border-radius: 8px;
+    border-color: #0E5E33;
+    box-shadow: rgba(0, 0, 0, 0.2);
+}
+
+.descargadonantes{
+    margin: 40px auto ;
+    width: 300px;
+    text-align: center;
+}
+
+.descargadonantes ul{
+    list-style: none;
+}
+
+
+
+.desplegable li a{
+
+    background-color: #75A93A;
+    line-height: 30px;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+}
+
+.desplegable li a:hover{
+    background-color: #0E5E33;
+}
+
+.desplegable li ul{
+    display: none;
+}
+
+.desplegable li:hover > ul{
+    display: block;
+}
+
+.tvheader{
+    display: flex;
+    margin: 20px auto;
+    justify-content: space-around;
+    flex-wrap: wrap-reverse;
+    max-width: 1200px;
+    background-color: #f1f1f1;
+    border-radius: 8px;
+    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.2);
+}
+
+.tvheader img{
+    max-width: 480px;
+    margin: -60px 0 -30px 0;
+}
+
+.tvheader div{
+    margin: auto 0;
+}
+
+.tvheader h1{
+    color: #0E5E33;
+    font-size: 30px;
+    margin-bottom: 40px;
+}
+
+.verrde{
+    background-color: #75A93A;
+}
+
+.verrde div{
+    max-width: 1200px;
+    margin: 40px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.verrde div h2{
+    color: #fff;
+    padding: 40px 0;
+    margin: auto;
+}
+
+.contenedor h2{
+    color: #0E5E33;
+}
+
+.box{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+   
+}
+
+.box img{
+    max-width: 250px;
+    margin: auto;
+}
+
+.box div{
+    max-width: 600px;
+}
+
+.verrde2{
+    background-color: #75A93A;
+    padding: 40px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.verrde2 img{
+    max-width: 300px;
+    margin-top: -120px;
+    margin-right: 80px;
+}
+
+.verrde2 div{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.verrde2 h2, .verrde2 a, .verrde2 p{
+    color: #fff;
+}
+
+.verrde2 ul{
+    list-style: none;
+}
+
+.verrde2 ul a{
+    color: #0E5E33;
+    padding: 10px;
+}
+
+.tvespacio{
+    margin-bottom: 80px;
+}
+@media screen and (max-width: 858px){
+    .titulo h1{
+        padding: 20px 10px;
+        font-size: 35px;
+        font-weight: bold;
+        color: #fff;
+        text-align: center;
+    } 
+
+    .lado_b{
+        display: none;
+    } 
+
+    .donantes img{
+        display: none;
+    }
+
+    .donantesm{
+        margin-top: 0;
+    }
+
+    .contenedor h2{
+        width: 100%;
+        color: #0E5E33;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+}
