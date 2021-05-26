@@ -3,6 +3,7 @@
     padding: 10px;
     max-width: 1000px;
     display: flex;
+    flex-wrap: wrap-reverse;
     justify-content: center;
     align-items: center;
 }
@@ -21,16 +22,17 @@
 }
 
 .sliderb{
- width: 100%;
+ width: 50%;
  overflow: hidden;
 }
+
 
 .slidesb{
     width: 500%;
     display: flex;
     justify-items: center;
     align-items: center;
-    margin: auto;
+    margin: auto 10px;
 }
 
 .slidesb img{

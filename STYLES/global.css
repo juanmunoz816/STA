@@ -6,24 +6,41 @@
     
 }
 
+@font-face {
+    font-family: Grotesque;
+    src: url(../FONTS/GalanoGrotesque/Rene\ Bieder\ -\ Galano\ Grotesque\ Bold.otf);
+    font-weight: bold;
+  }
+
+  @font-face {
+    font-family: Grotesque;
+    src: url(../FONTS/GalanoGrotesque/Rene\ Bieder\ -\ Galano\ Grotesque\ Medium.otf);
+    font-weight: normal;
+  }
 body{
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Grotesque', sans-serif;
     background-color: #fff;
 }
 
 .titulo{
-    background-image: url("IMG/Fondo.png");
+    background-image: url("../IMG/Fondo2.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
 }
 
 .titulo2{
-    background-image: linear-gradient(120deg, #75a93a6c 0%, #0e5e335e 100%), url("IMG/Fondo.png");
+    background-image: linear-gradient(120deg, #75a93a6c 0%, #0e5e335e 100%), url("../IMG/Fondo2.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
+    padding: 0 0 40px  0;
 
+}
+
+.titulo2 div{
+    max-width: 800px;
+    margin: auto;
 }
 
 .titulo h1{
@@ -62,7 +79,6 @@ body{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    margin-bottom: 20px;
 }
 
 .cajas h2{
@@ -99,6 +115,10 @@ a{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+}
+
+.espacio_cajas2{
+    width: 400px;
 }
 
 .texto_cajas{
@@ -147,6 +167,12 @@ a{
     -webkit-text-fill-color: transparent;
     -webkit-text-stroke-color: #0E5E33;
     -webkit-text-stroke-width: 2px;
+}
+
+.btn-centro{
+    display: flex;
+    justify-content: center;
+    margin: 0 auto 30px auto;
 }
 
 .nomarging{
@@ -216,11 +242,18 @@ p.card{
     flex-wrap: wrap;
     justify-content: space-between;
     padding: 10px;
-    width: 70%;
+    width: 60%;
 }
 
 .donantesm{
-    margin-top: -120px;
+    margin-top: -100px;
+}
+
+.donantesm h2{
+    width: 100%;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 20px;
 }
 
 .contenedor h2{
@@ -343,7 +376,7 @@ p.card{
 
 .tvheader{
     display: flex;
-    margin: 20px auto;
+    margin: -30px auto 0 auto;
     justify-content: space-around;
     flex-wrap: wrap-reverse;
     max-width: 1200px;
@@ -354,7 +387,8 @@ p.card{
 
 .tvheader img{
     max-width: 480px;
-    margin: -60px 0 -30px 0;
+    max-height: 100%;
+    margin: -60px 0 0  0;
 }
 
 .tvheader div{
@@ -434,11 +468,18 @@ p.card{
 .verrde2 ul a{
     color: #0E5E33;
     padding: 10px;
+    text-decoration: underline;
 }
 
 .tvespacio{
     margin-bottom: 80px;
 }
+
+section div video{
+    width: 480px;
+}
+
+
 @media screen and (max-width: 858px){
     .titulo h1{
         padding: 20px 10px;
@@ -447,6 +488,15 @@ p.card{
         color: #fff;
         text-align: center;
     } 
+
+    .titulo2 div h1{
+        font-size: 35px;
+        font-weight: bold;
+    }
+
+    .lineas{
+        font-size: 30px;
+    }
 
     .lado_b{
         display: none;
@@ -460,10 +510,77 @@ p.card{
         margin-top: 0;
     }
 
+    .donantesm h2{
+        width: 100%;
+        color: #0E5E33;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
     .contenedor h2{
         width: 100%;
         color: #0E5E33;
         text-align: center;
         margin-bottom: 10px;
     }
+
+    .tvheader{
+        display: flex;
+        margin: 0 auto ;
+        justify-content: space-around;
+        flex-wrap: wrap-reverse;
+        max-width: 1200px;
+        background-color: #f1f1f1;
+        border-radius: 8px;
+        box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.2);
+    }
+    
+    .tvheader img{
+        max-width: 100%;
+        max-height: 360px;
+        margin: 5px 0 ;
+    }
+    .tvheader div{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin: auto;
+    }
+
+    .verrde2 img{
+        display: none;
+    }
+
+    .verrde div h2{
+        color: #fff;
+        padding: 20px 0;
+        margin: auto;
+        font-size: 18px;
+    }
+
+    section div video{
+        display: flex;
+        justify-content: center;
+        margin: 10px auto;
+        width: 100%;
+
+    }
+
+    .donantes{
+        display: flex;
+        margin: auto;
+        background-color: #75A93A;
+        border-radius: 8px;
+        box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.2);
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 10px;
+        width: 80%;
+    }
+
+    .verrde2{
+        text-align: center;
+    }
+    
 }
