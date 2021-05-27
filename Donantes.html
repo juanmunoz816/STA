@@ -9,7 +9,18 @@
     <link rel="stylesheet" href="STYLES/menu.css" class="css">
     <link rel="stylesheet" href="STYLES/styles.css">
     <link rel="icon" href="IMG/FI.ico">
-     <script defer src="JS/app.js"></script>
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script defer src="JS/app.js"></script>
+    <script defer src="JS/donor.js"></script>
+    <script src="lib/js/alertify.js"></script>
+    <script src="lib/js/alertify.min.js"></script>
+
+   <!-- CSS -->
+    <link rel="stylesheet" href="lib/css/alertify.min.css"/>
+   <!-- Default theme -->
+    <link rel="stylesheet" href="lib/css/alertify.css"/>
+    <link rel="stylesheet" href="lib/css/themes/default.min.css"/>
     <title>Donantes</title>
 </head>
 <body>
@@ -40,17 +51,8 @@
         <h2>Top 10 Donantes</h2>
         <div class="donantes">
             <div class="listadonantes">
-                <ul>
-                    <li class="lista">725645 - Pedro Perez</li>
-                    <li class="lista">686987 - Juan Muñoz</li>
-                    <li class="lista">689999 - Alejandra Pizón</li>
-                    <li class="lista">556978 - Fundación yyy</li>
-                    <li class="lista">456789 - Daniela Molina</li>
-                    <li class="lista">265789 - Rafael Ordoñez</li>
-                    <li class="lista">689999 - Andres Suarez</li>
-                    <li class="lista">775654 - Camila Patiño</li>
-                    <li class="lista">897789 - Sofía Segura</li>
-                    <li class="lista">789456 - Sebastián Rozo</li>
+                <ul id="list-ul-donor">
+                    <li class="lista">Cargando...</li>
                 </ul>
             </div>
             <img src="IMG/gracias.png" alt="">
@@ -62,27 +64,48 @@
     </section>
 
     <section class="busqueda">
-        <input type="text" name="busquedadonante" id="busquedadonante">
+        <input type="text" name="busquedadonante" id="busquedadonante" placeholder="Nombre, identificación y Correo Electronico">
         <div class="btn"><a class="btnverde" href="" id ="btn-busquedadonante">Conoce más</a></div>
      </section>
+
+     <section class=" contenedor result-search" style="display: none;">
+        <div class="search-donor">
+           <ul id="ul-result-search">
+               <li class="desplegables"></li>
+            </ul>
+        </div>
+    </section>
 
      <section class="nomarging">
         <h2 class="lineas">Donantes</h2>
     </section>
 
     <section class="descargadonantes">
-        <ul class="desplegable">
-            <li><a href="">búsqueda por año</a>
-                <ul>
-                    <li class="desplegables"><a href="">2021</a></li>
-                    <li class="desplegables"><a href="">2022</a></li>
-                    <li class="desplegables"><a href="">2023</a></li>
-                    <li class="desplegables"><a href="">2024</a></li>
-                    <li class="desplegables"><a href="">2025</a></li>
-                </ul>
-            </li>
+        <select name="year-select" id="year-select" class="year-select">
+            <option value="">búsqueda por año</option>
+            <option value="2021">2021</option>
+            <option value="2022">2022</option>
+            <option value="2023">2023</option>
+            <option value="2024">2024</option>
+            <option value="2025">2025</option>
+        </select>
+    </section>
 
-        </ul>
+    <section class="month-section">
+        <ul class="ul-month">
+            <li class="li-moth" data-month="01" data-text="Enero" >Enero</li>
+            <li class="li-moth" data-month="02" data-text="Febrero">Febrero</li>
+            <li class="li-moth" data-month="03" data-text="Marzo">Marzo</li>
+            <li class="li-moth" data-month="04" data-text="Abril">Abril</li>
+            <li class="li-moth" data-month="05" data-text="Mayo">Mayo</li>
+            <li class="li-moth" data-month="06" data-text="Junio">Junio</li>
+            <li class="li-moth" data-month="07" data-text="Julio">Julio</li>
+            <li class="li-moth" data-month="08" data-text="Agosto">Agosto</li>
+            <li class="li-moth" data-month="09" data-text="Septiembre">Septiembre</li>
+            <li class="li-moth" data-month="10" data-text="Octubre">Octubre</li>
+            <li class="li-moth" data-month="11" data-text="Noviembre">Noviembre</li>
+            <li class="li-moth" data-month="12" data-text="Diciembre">Diciembre</li>
+        </li>
     </section>
    
     <section class="contacto" id="contacto">
