@@ -584,3 +584,54 @@ section div video{
     }
     
 }
+
+.search-donor{
+    display: flex;
+    margin: auto;
+    background-color: #75A93A;
+    border-radius: 8px;
+    box-shadow: 0 0 8px 0 rgb(0 0 0 / 20%);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 10px;
+    width: 80%;
+}
+
+.search-donor ul {
+    padding: 0.5rem;
+}
+
+.search-donor ul li  {
+    list-style: none;
+    color: #fff;
+}
+
+.month-section{
+    width: 95%;
+    max-width: 1000px;
+    margin: auto;
+    padding: 30px 0 30px 0;
+}
+.li-moth{
+    display: inline;
+    margin: 0.7rem;
+    color: #0E5E33;
+
+}
+
+.li-moth :hover{
+    cursor: pointer !important;
+    color: aqua;
+}
+.year-select{
+    width: 100%;
+    height: 7%;
+    background: #75A93A;
+    border: #75A93A;
+    color: #0E5E33;
+    text-align-last: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    border-radius: 10px;
+}
