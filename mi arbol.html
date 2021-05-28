@@ -35,8 +35,295 @@
         <h1>Mi Árbol</h1>
     </section>
 
-    <section class="busquedaarbl">
-        <input type="text" name="" id="">
+    <section class="busqueda">
+        <input type="text" name="busquedaarbol" id="busquedaarbol" placeholder="Código del arbol">
+        <div class="btn"><a class="btnverde" href="" id ="btn-busquedaarbol">Conoce más</a></div>
+    </section>
+
+    <section class="mapa1">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4082940.153944798!2d-74.1353635262154!3d-2.057435950059491!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91e446f0a2bb1eb9%3A0x754733fc8ef9ce99!2sAmazonas!5e0!3m2!1ses-419!2sco!4v1622213367028!5m2!1ses-419!2sco" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+    </section>
+
+    <section class="resultados">
+
+        <div class="espacio_card">
+            
+            <div id="tree-arrows" class="tree_arrow_buttons">
+                <p class="title">Este es tu árbol</p>
+                <button class="left">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="15.811" height="14.121" viewBox="0 0 15.811 14.121">
+                            <path id="arrow-forward.2" d="M5,12H19m0,0L13,6m6,6-6,6" transform="translate(20.061 19.061) rotate(180)" fill="none" stroke="#0d682c" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></path>
+                        </svg>
+                </button>
+              <strong class="description">Código del árbol: <span id="tree-code"></span></strong>
+                    <button class="right">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="15.028" height="13.45" viewBox="0 0 15.028 13.45">
+                            <path id="arrow-forward.2" d="M5,11.665H18.217m0,0L12.553,6m5.665,5.665-5.665,5.665" transform="translate(-4.25 -4.939)" fill="none" stroke="#c1c1c1" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></path>
+                        </svg>
+                    </button>
+            </div>
+
+            <div class="data_card">
+
+                <div class="card_body">
+
+                    <img src="../IMG/f1.png" alt="">
+
+                    <ul>
+                        <li>
+                                <strong> Comunidad indígena: </strong>
+                                <p id="tree-community"></p>
+                            </li>
+
+                        <li>
+                                <strong>Especie del árbol:</strong>
+                                <p id="tree-kind"></p>
+                            </li>
+
+                        <li>
+                                <strong>Factor:</strong>
+                                <p id="tree-factor"></p>
+                            </li>
+
+                        <li>
+                                <strong>De:</strong>
+                                <p id="tree-giver"></p>
+                            </li>
+
+                        <li>
+                                <strong> Para: </strong>
+                                <p id="tree-receiver"></p>
+                            </li>
+
+                        <li>
+                                <strong> Fue plantado: </strong>
+                                <p id="tree-planting_date"></p>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+           
+            <div class="social-sharing">   <!-- /snippets/social-sharing.liquid -->
+                <ul > 
+                    <li>
+                        <a target="_blank" href="//www.facebook.com/sharer.php?u=https://savingtheamazon.org/products/un-arbol-para-mi" class="btn btn--small btn--share share-facebook" aria-describedby="a11y-new-window-external-message" rel="null noopener">
+                        <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-facebook" viewBox="0 0 20 20"><path fill="#0E5E33" d="M18.05.811q.439 0 .744.305t.305.744v16.637q0 .439-.305.744t-.744.305h-4.732v-7.221h2.415l.342-2.854h-2.757v-1.83q0-.659.293-1t1.073-.342h1.488V3.762q-.976-.098-2.171-.098-1.634 0-2.635.964t-1 2.72V9.47H7.951v2.854h2.415v7.221H1.413q-.439 0-.744-.305t-.305-.744V1.859q0-.439.305-.744T1.413.81H18.05z"></path></svg>
+                        <!-- <span class="share-title" aria-hidden="true">Compartir</span> -->
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a target="_blank" href="//twitter.com/share?text=Adopt%C3%A9%20un%20%C3%A1rbol&amp;url=https://savingtheamazon.org/products/un-arbol-para-mi" class="btn btn--small btn--share share-twitter" aria-describedby="a11y-new-window-external-message" rel="null noopener">
+                        <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-twitter" viewBox="0 0 20 20"><path fill="#0E5E33" d="M19.551 4.208q-.815 1.202-1.956 2.038 0 .082.02.255t.02.255q0 1.589-.469 3.179t-1.426 3.036-2.272 2.567-3.158 1.793-3.963.672q-3.301 0-6.031-1.773.571.041.937.041 2.751 0 4.911-1.671-1.284-.02-2.292-.784T2.456 11.85q.346.082.754.082.55 0 1.039-.163-1.365-.285-2.262-1.365T1.09 7.918v-.041q.774.408 1.773.448-.795-.53-1.263-1.396t-.469-1.864q0-1.019.509-1.997 1.487 1.854 3.596 2.924T9.81 7.184q-.143-.509-.143-.897 0-1.63 1.161-2.781t2.832-1.151q.815 0 1.569.326t1.284.917q1.345-.265 2.506-.958-.428 1.386-1.732 2.18 1.243-.163 2.262-.611z"></path></svg>
+                        <!-- <span class="share-title" aria-hidden="true">Tuitear</span> -->
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a target="_blank" href="//pinterest.com/pin/create/button/?url=https://savingtheamazon.org/products/un-arbol-para-mi&amp;media=//cdn.shopify.com/shopifycloud/shopify/assets/no-image-2048-5e88c1b20e087fb7bbe9a3771824e743c244f437e4f8ba93bbf7b11b53f7824c_1024x1024.gif&amp;description=Adopt%C3%A9%20un%20%C3%A1rbol" class="btn btn--small btn--share share-pinterest" aria-describedby="a11y-new-window-external-message" rel="null noopener">
+                        <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-pinterest" viewBox="0 0 20 20"><path fill="#0E5E33" d="M9.958.811q1.903 0 3.635.744t2.988 2 2 2.988.744 3.635q0 2.537-1.256 4.696t-3.415 3.415-4.696 1.256q-1.39 0-2.659-.366.707-1.147.951-2.025l.659-2.561q.244.463.903.817t1.39.354q1.464 0 2.622-.842t1.793-2.305.634-3.293q0-2.171-1.671-3.769t-4.257-1.598q-1.586 0-2.903.537T5.298 5.897 4.066 7.775t-.427 2.037q0 1.268.476 2.22t1.427 1.342q.171.073.293.012t.171-.232q.171-.61.195-.756.098-.268-.122-.512-.634-.707-.634-1.83 0-1.854 1.281-3.183t3.354-1.329q1.83 0 2.854 1t1.025 2.61q0 1.342-.366 2.476t-1.049 1.817-1.561.683q-.732 0-1.195-.537t-.293-1.269q.098-.342.256-.878t.268-.915.207-.817.098-.732q0-.61-.317-1t-.927-.39q-.756 0-1.269.695t-.512 1.744q0 .39.061.756t.134.537l.073.171q-1 4.342-1.22 5.098-.195.927-.146 2.171-2.513-1.122-4.062-3.44T.59 10.177q0-3.879 2.744-6.623T9.957.81z"></path></svg>
+                        <!-- <span class="share-title" aria-hidden="true">Hacer pin</span> -->
+                        </a>
+                    </li>
+                </ul>
+               
+            </div>
+        </div>
+
+        <div class="mapa">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4082940.153944798!2d-74.1353635262154!3d-2.057435950059491!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91e446f0a2bb1eb9%3A0x754733fc8ef9ce99!2sAmazonas!5e0!3m2!1ses-419!2sco!4v1622213367028!5m2!1ses-419!2sco" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </section>
+
+    <section class="tablas1">
+        <div class="row progress_row">
+            <h2 class="title">Seguimiento de tu árbol</h2>
+            <p class="sub-title">Tiempo para tu próxima fotografia</p>
+            <div class="wizard-progress">
+              <div class="step complete">
+                6 meses
+                <div class="node"></div>
+              </div>
+              <div class="step complete">
+                5 meses
+                <div class="node"></div>
+              </div>
+              <div class="step complete">
+                4 meses
+                <div class="node"></div>
+              </div>
+              <div class="step in-progress complete">
+                3 meses
+                <div class="node"></div>
+              </div>
+              <div class="step">
+                2 meses
+                <div class="node"></div>
+              </div>
+              <div class="step">
+                1 mes
+                <div class="node"></div>
+              </div>
+              <div class="step">
+                •
+                <div class="node"></div>
+              </div>
+            </div>
+          </div>
+    </section>
+
+    <section class="tablas2">
+        <p>¿Que sucedió en el mes 3 con tu árbol? Tu árbol se está desarrollando de manera óptima en esta etapa inicial tu aporte es equivalente a la fabricación de 1kg de papel estas progresando grandemente en tu contribución a nuestro planeta</p>
+        <div>
+            <p>Últimos 30 días</p>
+            <p>2021/5/4 - 2021/8/3</p>
+        </div>
+        
+        <table class="default">
+
+            <tr>
+        
+            <td class="t1">Celda 1</td>
+        
+            <td>Celda 2</td>
+        
+            </tr>
+        
+            <tr>
+        
+            <td class="t1">Celda 4</td>
+        
+            <td>Celda 5</td>
+    
+        
+            </tr>
+        
+        </table>
+    </section>
+
+    <section class="tablas3">    
+
+        <table class="Vinetas">
+
+            <tr>
+        
+            <td>Luna nueva</td>
+            <td>Luna creciente</td>
+            <td>Luna llena</td>
+            <td>Luna menguante</td>
+            <td>Carbono (ton)</td>
+            <td>Día soleado</td>
+            <td>Día con lluvia</td>
+            <td>Día nublado</td>
+            <td>Control plagas</td>
+            <td>Riego</td>
+            <td>Poda</td>
+            <td>Abono</td>
+            <td>Revisión</td>
+        
+            </tr>
+        
+            <tr class="iconos_arbol">
+        
+                <td>🌑</td>
+                <td>🌗</td>
+                <td>🌕</td>
+                <td>🌓</td>
+                <td>🌱</td>
+                <td>☀️</td>
+                <td>🌧</td>
+                <td>🌥</td>
+                <td>🐞</td>
+                <td>🚿</td>
+                <td>✂️</td>
+                <td>💩</td>
+                <td>👀</td>
+    
+        
+            </tr>
+        
+        </table>
+
+        <table class="tdatos">
+
+            <tr>
+        
+            <td>Luna</td>
+            <td>🌑Luna nueva</td>
+            <td>🌗Luna creciente</td>
+            <td>Luna menguante</td>
+            <td>🌓Luna llena</td>
+                   
+            </tr>
+
+            <tr>
+                <td> Carbono capturado </td>
+                <td> 2 </td>
+                <td> 3 </td>
+                <td> 4 </td>
+                <td> 5 </td>
+            </tr>
+
+            <tr>
+                <td> Comportamiento del árbol </td>
+                <td> 2 </td>
+                <td> 3 </td>
+                <td> 4 </td>
+                <td> 5 </td>
+            </tr>
+
+            <tr>
+                <td> Clima </td>
+                <td> 2 </td>
+                <td> 3 </td>
+                <td> 4 </td>
+                <td> 5 </td>
+            </tr>
+
+            <tr>
+                <td> Riego </td>
+                <td> 2 </td>
+                <td> 3 </td>
+                <td> 4 </td>
+                <td> 5 </td>
+            </tr>
+
+            <tr>
+                <td> Control de malezas </td>
+                <td> 2 </td>
+                <td> 3 </td>
+                <td> 4 </td>
+                <td> 5 </td>
+            </tr>
+
+            <tr>
+                <td> Control de insectos </td>
+                <td> 2 </td>
+                <td> 3 </td>
+                <td> 4 </td>
+                <td> 5 </td>
+            </tr>
+
+            <tr>
+                <td> Abono </td>
+                <td> 2 </td>
+                <td> 3 </td>
+                <td> 4 </td>
+                <td> 5 </td>
+            </tr>
+
+            <tr>
+                <td> Evaluación <br> eco-fisiológica y<br> fitosanitaria </td>
+                <td> 2 </td>
+                <td> 3 </td>
+                <td> 4 </td>
+                <td> 5 </td>
+            </tr>
+
+        
+        </table>
+
     </section>
 
     <section class="contacto" id="contacto">

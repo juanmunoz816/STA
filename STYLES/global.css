@@ -81,6 +81,12 @@ body{
     flex-wrap: wrap;
 }
 
+.cajasar{
+    width: 100%;
+    display: flex;  
+    overflow-y: scroll;
+}
+
 .cajas h2{
     color: #0E5E33;
 }
@@ -147,6 +153,7 @@ a{
 
 .arboles_donantes img{
     max-width: 300px;
+    max-height: 300px;
 }
 
 .titulosverdes{
@@ -475,7 +482,7 @@ p.card{
     margin-bottom: 80px;
 }
 
-section div video{
+section div iframe{
     width: 480px;
 }
 
@@ -558,7 +565,7 @@ section div video{
         font-size: 18px;
     }
 
-    section div video{
+    section div iframe{
         display: flex;
         justify-content: center;
         margin: 10px auto;
@@ -582,6 +589,28 @@ section div video{
     .verrde2{
         text-align: center;
     }
+
+    .espacio_card{
+        background-color:#efeeeb;
+        text-align: center;
+        width: 100%;
+    }
+    .card_body{
+
+        width: 300px;
+        text-align: left;
+    }
+
+    .tablas3{
+        width:  95%;
+        margin: 0;
+        overflow: scroll
+        
+    }
+    
+    .iconos_arbol{
+        font-size: 12px;
+    }
     
 }
 
@@ -596,6 +625,8 @@ section div video{
     justify-content: space-between;
     padding: 10px;
     width: 80%;
+
+    
 }
 
 .search-donor ul {
@@ -634,4 +665,145 @@ section div video{
     font-size: 1.5rem;
     font-weight: bold;
     border-radius: 10px;
+}
+
+
+
+.espacio_card{
+    background-color:#efeeeb;
+    text-align: center;
+    width:50%;
+    min-width: 350px;
+}
+.card_body{
+    background-color: #fff;
+    width: 350px;
+    border-radius: 8px;
+    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.2);
+    margin: auto;
+    text-align: left;
+}
+
+.card_body img{
+    width: 100%;
+}
+
+.card_body ul{
+    list-style: none;
+    margin: 10px;
+}
+
+.titulo1{
+    font-size: 36px;
+    color: #2B478B;
+}
+
+.social-sharing{
+    width: 350px;
+    margin: auto;
+}
+
+.social-sharing ul{
+    list-style: none;
+}
+
+.social-sharing ul li{
+    display: inline-block;
+    justify-content: space-between;
+}
+
+.social-sharing ul svg{
+    width: 30px;
+    margin: auto 10px;
+}
+
+.resultados{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.mapa{
+    margin: auto;
+}
+
+.description{
+    margin: 10px 0 0 0;
+}
+
+.wizard-progress{
+    margin: auto;
+    width: 95%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.wizard-progress h2, .wizard-progress p, .wizard-progress div{
+    text-align: center;
+    color: #0E5E33;
+}
+
+.title, .sub-title{
+    text-align: center;
+    color: #0E5E33;
+}
+
+.node{
+    margin: auto;
+    background-color: #75A93A;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+
+.tablas2{
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+.tablas3{
+    max-width: 1200px;
+    margin: 20px auto;
+}
+
+.tablas2 div{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+    color: #0E5E33;
+    font-weight: bold;
+}
+
+.tablas2 table{
+    width: 100%;
+    text-align: center;
+    border-collapse: collapse;
+}
+
+.tablas3 table{
+    width: 100%;
+    text-align: center;
+    border-collapse: collapse;
+}
+
+.tablas2 td, .tablas3 td{
+    border: 1px solid #0E5E33;
+    margin: 0;
+    border-spacing: 0;
+}
+
+.t1{
+    max-width: 20px;
+}
+
+.iconos_arbol{
+    font-size: 30px;
+}
+
+.tdatos{
+    margin-top: 20px;
+}
+
+.autoar{
+    border-radius: 8px;
+    margin: auto 20px;
 }
