@@ -1,3 +1,4 @@
+
 #saving_tu_arbol {
     margin-top: 4rem;
   }
@@ -88,6 +89,7 @@
     display: flex;
     align-items: center;
     border-radius: 10px 10px 0 0;
+    
   }
   
   #saving_tu_arbol .arrow_buttons {

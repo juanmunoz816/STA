@@ -330,17 +330,34 @@ p.card{
     padding: 30px;
 }
 
+.espcioblanco{
+    height: 50px;
+}
+
 .busqueda{
-    margin:40px auto;
-    max-width: 800px;
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+    margin:auto;
+    left: 0;
+    right: 0;
+    max-width: 1200px;
+}
+
+.botonesbusqueda{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+
 }
 
-.busqueda input{
-    width: 60%;
+.saving_arbol{
+    margin-top: 200px;
+}
+  
+.botonesbusqueda input{
     height: 40px;
+    width: 200px;
     margin: auto 0;
     border-radius: 8px;
     border-color: #0E5E33;

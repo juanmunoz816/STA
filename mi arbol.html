@@ -15,6 +15,7 @@
     <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
     <script defer src="JS/tree.js"></script>
     <script defer src="JS/donor.js"></script>
+    <script defer src="JS/app.js"></script>
     <script src="lib/js/alertify.js"></script>
     <script src="lib/js/alertify.min.js"></script>
 
@@ -50,10 +51,15 @@
     </section>
 
     <section class="busqueda">
+      <div class="botonesbusqueda">
         <input type="text" name="busquedaarbol" id="busquedaarbol" placeholder="Código del arbol">
         <div class="btn"><a class="btnverde" href="" id ="btn-busquedaarbol">Conoce más</a></div>
+      </div>
+        
     </section>
-    <section id="saving_tu_arbol">
+
+    <section class="espcioblanco"></section>
+    <section id="saving_tu_arbol" class="saving_arbol">
         <div class="row map-row">
           <div class="col data_col hidden">
             <p class="title">Este es tu árbol</p>
@@ -342,6 +348,7 @@
         </section>
 
     </section>
+
    
 </body>
 </html>
