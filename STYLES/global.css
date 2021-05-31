@@ -699,9 +699,10 @@ section div iframe{
 }
 
 .social-sharing{
-    width: 350px;
+    width: 158px;
     margin: auto;
 }
+
 
 .social-sharing ul{
     list-style: none;
@@ -730,12 +731,12 @@ section div iframe{
     margin: 10px 0 0 0;
 }
 
-.wizard-progress{
+/* .wizard-progress{
     margin: auto;
     width: 95%;
     display: flex;
     justify-content: space-around;
-}
+} */
 
 .wizard-progress h2, .wizard-progress p, .wizard-progress div{
     text-align: center;
