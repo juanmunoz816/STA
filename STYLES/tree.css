@@ -153,6 +153,10 @@
     #saving_tu_arbol .row.map-row .map_col {
       height: 500px;
     }
+
+    #saving_tu_arbol .sentence {
+      margin-top: 500px;
+    }
   }
   
   #saving_tu_arbol .progress_row {
