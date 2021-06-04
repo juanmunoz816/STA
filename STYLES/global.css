@@ -58,6 +58,13 @@ body{
     padding: 30px 0 30px 0;
 }
 
+.contenedorc{
+    width: 95%;
+    max-width: 1000px;
+    margin: 0 auto;
+    
+}
+
 .flex{
     display: flex;
 }
@@ -301,6 +308,11 @@ p.card{
     padding: 10px 10px;
 }
 
+.Sub_texto{
+    color: #9b9b9b;
+    font-size: 12px;
+}
+
 .redes{
     margin: 10px 0;
     width: 300px;
@@ -332,6 +344,23 @@ p.card{
 
 .espcioblanco{
     height: 50px;
+}
+
+.busqueda2{
+    margin:40px auto;
+    max-width: 800px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.busqueda2 input{
+    width: 60%;
+    height: 40px;
+    margin: auto 0;
+    border-radius: 8px;
+    border-color: #0E5E33;
+    box-shadow: rgba(0, 0, 0, 0.2);
 }
 
 .busqueda{
@@ -409,9 +438,20 @@ p.card{
     box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.2);
 }
 
+.tvheaderb{
+    display: flex;
+    margin: -30px auto 0 auto;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    background-color: #f1f1f1;
+    border-radius: 8px;
+    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.2);
+}
+
 .tvheader img{
     max-width: 480px;
-    max-height: 100%;
+    max-height: 450px;
     margin: -60px 0 0  0;
 }
 
@@ -437,10 +477,21 @@ p.card{
     justify-content: space-around;
 }
 
+.verde div div{
+    width: 300px;
+}
+
 .verrde div h2{
     color: #fff;
-    padding: 40px 0;
+    padding: 40px 0 0 0;
     margin: auto;
+}
+
+.verrde div p{
+    color: #fff;
+    margin: auto;
+    font-size: 12px;
+    padding: 0 0 40px 0;
 }
 
 .contenedor h2{
@@ -454,12 +505,19 @@ p.card{
    
 }
 
-.box img{
+.box2{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap-reverse;
+   
+}
+
+.box img, .box2 img{
     max-width: 250px;
     margin: auto;
 }
 
-.box div{
+.box div,.box2 div{
     max-width: 600px;
 }
 
@@ -485,13 +543,28 @@ p.card{
     color: #fff;
 }
 
+.verrde2 h2{
+    font-size: 35px;
+}
+
+.verrde2 p{
+    margin-top: 30px;
+}
+
+.verrde2 a{
+    font-size: 20px;
+    font-weight: bold;
+}
+
 .verrde2 ul{
     list-style: none;
+    margin-top: 30px;
+    padding: 0;
 }
 
 .verrde2 ul a{
     color: #0E5E33;
-    padding: 10px;
+    padding: 10px 0;
     text-decoration: underline;
 }
 
