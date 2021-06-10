@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="STYLES/global.css" class="css">
     <link rel="stylesheet" href="STYLES/menu.css" class="css">
     <link rel="stylesheet" href="STYLES/styles.css">
+    <link rel="stylesheet" href="STYLES/sld.css">
     <link rel="icon" href="IMG/FI.ico">
     <script defer src="JS/app.js"></script>
     <title>Comunidad</title>
@@ -91,16 +92,12 @@
         <h2 class="lineas">La Comunidad</h2>
     </section>
 
-    <section class="contenedor_slider">
- 
-        <div class="slider">
-            <div class="slides">
-                <input type="radio" name="radio-btn" id="radio1b">
-                <input type="radio" name="radio-btn" id="radio2b">
-                <input type="radio" name="radio-btn" id="radio3b">
-                <input type="radio" name="radio-btn" id="radio4b">
+    <section class="cnt_total">
+        <div class="cnt_sld">
+            <div class="sldr" id="sldr"> 
 
-                <div class="slide first">
+        <!-- Primer Slider -->
+                <div class="sld_sec">
                     <section  class="contenedor cajas">
                         <div class="cards">
                             <div><img src="IMG/f1.png" alt=""></div>
@@ -111,7 +108,7 @@
                                     </p>
                             </div>
                         </div>
-                        <div class="cards">
+                        <div class="cards imgh">
                             <div><img src="IMG/f2.png" alt=""></div>
                             <div class="margen">
                                 <h2 class="card"> Cecilia Acuña</h2>
@@ -120,7 +117,7 @@
                                     </p>
                             </div>
                         </div>
-                        <div class="cards">
+                        <div class="cards imgh">
                             <div><img src="IMG/f3.png" alt=""></div>
                             <div class="margen">
                                 <h2 class="card"> Mercedes Hernández</h2>
@@ -130,10 +127,11 @@
                             </div>
                         </div>
                     </section>
-                </div>
+                    </div>
 
-                <div class="slide">
-                                        <section  class="contenedor cajas">
+        <!-- Segundo Slider -->
+                <div class="sld_sec">
+                    <section  class="contenedor cajas">
                         <div class="cards">
                             <div><img src="IMG/f1.png" alt=""></div>
                             <div class="margen">
@@ -143,7 +141,7 @@
                                     </p>
                             </div>
                         </div>
-                        <div class="cards">
+                        <div class="cards imgh">
                             <div><img src="IMG/f2.png" alt=""></div>
                             <div class="margen">
                                 <h2 class="card"> Cecilia Acuña</h2>
@@ -152,7 +150,7 @@
                                     </p>
                             </div>
                         </div>
-                        <div class="cards">
+                        <div class="cards imgh">
                             <div><img src="IMG/f3.png" alt=""></div>
                             <div class="margen">
                                 <h2 class="card"> Mercedes Hernández</h2>
@@ -162,10 +160,11 @@
                             </div>
                         </div>
                     </section>
-                </div>
+                    </div>
 
-                <div class="slide">
-                                        <section  class="contenedor cajas">
+        <!-- Tercer Slider -->
+                <div class="sld_sec">
+                    <section  class="contenedor cajas">
                         <div class="cards">
                             <div><img src="IMG/f1.png" alt=""></div>
                             <div class="margen">
@@ -175,7 +174,7 @@
                                     </p>
                             </div>
                         </div>
-                        <div class="cards">
+                        <div class="cards imgh">
                             <div><img src="IMG/f2.png" alt=""></div>
                             <div class="margen">
                                 <h2 class="card"> Cecilia Acuña</h2>
@@ -184,7 +183,7 @@
                                     </p>
                             </div>
                         </div>
-                        <div class="cards">
+                        <div class="cards imgh">
                             <div><img src="IMG/f3.png" alt=""></div>
                             <div class="margen">
                                 <h2 class="card"> Mercedes Hernández</h2>
@@ -194,10 +193,11 @@
                             </div>
                         </div>
                     </section>
-                </div>
+                    </div>
 
-                <div class="slide">
-                                        <section  class="contenedor cajas">
+        <!-- Cuarto Slider -->
+                <div class="sld_sec">
+                    <section  class="contenedor cajas">
                         <div class="cards">
                             <div><img src="IMG/f1.png" alt=""></div>
                             <div class="margen">
@@ -206,8 +206,8 @@
                                     Luz Mila es una mujer sencilla que durante su vida se ha enfrentado a momentos difíciles como la separación de sus padres y en ocasiones la dificultad para conseguir alimentos. Pero esos momentos quedan a un lado cuando nos cuenta que a pesar de las adversidades, en la comunidad se siente acompañada y apoyada, puede compartir con su familia y reírse con ellas, especialmente con sus cuñadas que son sus mejores amigas.
                                     </p>
                             </div>
-                        </div>
-                        <div class="cards">
+                        </div> 
+                        <div class="cards imgh">
                             <div><img src="IMG/f2.png" alt=""></div>
                             <div class="margen">
                                 <h2 class="card"> Cecilia Acuña</h2>
@@ -216,7 +216,7 @@
                                     </p>
                             </div>
                         </div>
-                        <div class="cards">
+                        <div class="cards imgh">
                             <div><img src="IMG/f3.png" alt=""></div>
                             <div class="margen">
                                 <h2 class="card"> Mercedes Hernández</h2>
@@ -226,23 +226,15 @@
                             </div>
                         </div>
                     </section>
-                </div>
-
-                <div class="navigation-auto">
-                    <div class="auto-btn1"></div>
-                    <div class="auto-btn2"></div>
-                    <div class="auto-btn3"></div>
-                    <div class="auto-btn4"></div>
-                </div>
-
+                    </div>
             </div>
-            <div class="navigtion-manual2">
-                <label for="radio1b" class="manual-btn"></label>
-                <label for="radio2b" class="manual-btn"></label>
-                <label for="radio3b" class="manual-btn"></label>
-                <label for="radio4b" class="manual-btn"></label>
-            </div>
-        </div>
+
+
+        </div> 
+
+        <!-- Botones -->
+        <div class="slider__btn slider__btn_r" id="btn_r"><</div>
+        <div class="slider__btn slider__btn_l" id="btn_l">></div>
     </section>
 
     <section class="nomarging space">
@@ -284,5 +276,6 @@
 
     </section>
 
+    <script src="JS/sld.js"></script>
 </body>
 </html>

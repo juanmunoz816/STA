@@ -576,6 +576,10 @@ section div iframe{
     width: 480px;
 }
 
+.gris{
+    font-size: 12px;
+    color: #9b9b9b;
+}
 
 @media screen and (max-width: 858px){
     .titulo h1{
@@ -897,4 +901,6 @@ section div iframe{
 .autoar{
     border-radius: 8px;
     margin: auto 20px;
+    width: 250px;
+    max-height: 300px;
 }
