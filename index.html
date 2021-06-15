@@ -7,8 +7,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="STYLES/global.css" class="css">
     <link rel="stylesheet" href="STYLES/menu.css" class="css">
-    <link rel="stylesheet" href="STYLES/styles.css">
-    <link rel="stylesheet" href="STYLES/sld.css">
+    <link rel="stylesheet" href="STYLES/NS2.css">
     <link rel="icon" href="IMG/FI.ico">
      <script defer src="JS/app.js"></script>
     <title>Tarjeta Verde</title>
@@ -36,67 +35,79 @@
         <h1>Tu Nueva tarjeta débito Amazonía</h1>
     </section>
 
-    <section class="cnt_total">
-        <div class="cnt_sld">
-            <div class="sldr" id="sldr"> 
-
-        <!-- Primer Slider -->
-                <div class="sld_sec">
-                        <div class="sld_t">
-                            <h2>Tarjeta débito Amazonía</h2>
-                            <p>Banco de Bogotá y Saving The Amazon se han unido para crear la primera tarjeta verde de Colombia. Junto a los clientes del Banco de Bogotá sembraremos especies nativas en la Amazonía. Desliza para conocer más</p>
-                            <div class="btn"><a class="btnverde" href="Tu Tarjeta Verde.html">Conoce más</a></div>
-                        </div>
-                        <div> 
-                            <img src="IMG/Tarjeta2.png" alt="">
-                        </div>
+    <Section class="NS2">
+        <!-- Slideshow container -->
+        <div class="slideshow-container">
+    
+            <!-- Full-width images with number and caption text -->
+            <div class="mySlides fade">
+                <div class="NS">
+                    <div class="sld_t">
+                        <h2>Tarjeta débito Amazonía</h2>
+                        <p>Banco de Bogotá y Saving The Amazon se han unido para crear la primera tarjeta verde de Colombia. Junto a los clientes del Banco de Bogotá sembraremos especies nativas en la Amazonía. Desliza para conocer más</p>
+                        <div class="btn"><a class="btnverde" href="Tu Tarjeta Verde.html">Conoce más</a></div>
                     </div>
-
-        <!-- Segundo Slider -->
-                <div class="sld_sec">
-                        <div>
-                            <img src="IMG/sembremos.png" alt="">
-                        </div>
-                        <div class="sld_t">
-                            <h2>Sembremos Juntos</h2>
-                            <p>El 1% sobre el valor de las compras* de cada cliente irá destinado a la siembra de árboles por comunidades indígenas en el altar ecológico más importante del planeta, la selva Amazónica.
-                            <br>Además por cada dos árboles sembrados por los clientes, el Banco de Bogotá sembrará uno.</p>
-                            <p class="gris">*No aplica para retiros en ATM, transferencias, pagos PSE ni pagos de servicios públicos.</p>
-                        </div>
+                    <div> 
+                        <img class="imgh" src="IMG/Tarjeta2.png" alt="">
                     </div>
-
-        <!-- Tercer Slider -->
-                <div class="sld_sec">
-                        <div class="sld_t">
-                            <h2>Conoce a la comunidad</h2>
-                            <p>Conoce a la comunidad indígena que siembra y cuida los árboles</p>
-                            <div class="btn"><a class="btnverde" href="comunidad.html">Conoce más</a></div>
-                        </div>
-                        <div>
-                            <img src="IMG/comunidad.png" alt="">
-                        </div>
-                    </div>
-
-        <!-- Cuarto Slider -->
-                <div class="sld_sec">
-                        <div class="sld_t">
-                            <h2>Conoce a los Donantes</h2>
-                            <p>Gracias a cada una de las personas que con su aporte hacen posible este gran sueño, descubre quienes son</p>
-                            <div class="btn"><a class="btnverde" href="Donantes.html">Conoce más</a></div>
-                        </div>
-                        <div >
-                            <img src="IMG/donantes.png" alt="">
-                        </div>
-                    </div>
+                </div>
             </div>
-
-
-        </div> 
-
-        <!-- Botones -->
-        <div class="slider__btn slider__btn_r" id="btn_r"><</div>
-        <div class="slider__btn slider__btn_l" id="btn_l">></div>
-    </section>
+        
+            <div class="mySlides fade">
+                <div class="NS">
+                    <div> 
+                        <img class="imgh" src="IMG/sembremos.png" alt="">
+                    </div>
+                    <div class="sld_t">
+                        <h2>Sembremos Juntos</h2>
+                        <p>El 1% sobre el valor de las compras* de cada cliente irá destinado a la siembra de árboles por comunidades indígenas en el altar ecológico más importante del planeta, la selva Amazónica.
+                        <br>Además por cada dos árboles sembrados por los clientes, el Banco de Bogotá sembrará uno.</p>
+                        <p class="gris">*No aplica para retiros en ATM, transferencias, pagos PSE ni pagos de servicios públicos.</p>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="mySlides fade">
+                <div class="NS">
+                    <div class="sld_t">
+                                    <h2>Conoce a la comunidad</h2>
+                                    <p>Conoce a la comunidad indígena que siembra y cuida los árboles</p>
+                                    <div class="btn"><a class="btnverde" href="comunidad.html">Conoce más</a></div>
+                    </div>
+                    <div> 
+                        <img class="imgh" src="IMG/comunidad.png" alt="">
+                    </div>
+                </div>
+            </div>
+    
+            <div class="mySlides fade">
+                <div class="NS">
+                    <div class="sld_t">
+                        <h2>Conoce a los Donantes</h2>
+                        <p>Gracias a cada una de las personas que con su aporte hacen posible este gran sueño, descubre quienes son</p>
+                        <div class="btn"><a class="btnverde" href="Donantes.html">Conoce más</a></div>
+                    </div>
+                    <div >
+                        <img class="imgh" src="IMG/donantes.png" alt="">
+                    </div>
+                </div>
+            </div>
+        
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br>
+        
+        <!-- The dots/circles -->
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+        </div>
+    
+    </Section>
 
     <section class="zonaverde titulo2">
         <div>
@@ -119,46 +130,66 @@
 
     </section>
 
-    <section class="cnt_total2">
-        <div class="cnt_sld2">
-            <div class="sldr2" id="sldr2"> 
-
-        <!-- Primer Slider -->
-                <div class="sld_sec2">
-                    <div class="autoar"><img src="IMG/Arboles/arbol (1).jpeg" alt=""></div>   
-                    <div class="autoar imgh"><img src="IMG/Arboles/arbol (1).jpg" alt=""></div>  
-                    <div class="autoar imgh"><img src="IMG/Arboles/arbol (2).jpeg" alt=""></div>
-                </div>
-
-        <!-- Segundo Slider -->
-                <div class="sld_sec2">
-                    <div class="autoar"><img src="IMG/Arboles/arbol (2).jpg" alt=""></div>
-                    <div class="autoar imgh"><img src="IMG/Arboles/arbol (3).jpeg" alt=""></div>
-                    <div class="autoar imgh"><img src="IMG/Arboles/arbol (4).jpg" alt=""></div> 
-                </div>
-
-        <!-- Tercer Slider -->
-                <div class="sld_sec2">
-                    <div class="autoar"><img src="IMG/Arboles/arbol (5).jpg" alt=""></div>   
-                    <div class="autoar imgh"><img src="IMG/Arboles/arbol (6).jpg" alt=""></div> 
-                    <div class="autoar imgh"><img src="IMG/Arboles/arbol (7).jpg" alt=""></div>
-                </div>
-
-        <!-- Cuarto Slider -->
-                <div class="sld_sec2">
-                    <div class="autoar"><img src="IMG/Arboles/arbol (2).jpg" alt=""></div>
-                    <div class="autoar imgh"><img src="IMG/Arboles/arbol (3).jpeg" alt=""></div>
-                    <div class="autoar imgh"><img src="IMG/Arboles/arbol (4).jpg" alt=""></div> 
+    <Section class="NS2">
+        <!-- Slideshow container -->
+        <div class="slideshow-container">
+    
+            <!-- Full-width images with number and caption text -->
+            <div class="mySlides2 fade">
+                <div class="NS">
+                    <div class="sld_sec2">
+                        <div class="autoar"><img src="IMG/Arboles/arbol (1).jpeg" alt=""></div>   
+                        <div class="autoar imgh"><img src="IMG/Arboles/arbol (1).jpg" alt=""></div>  
+                        <div class="autoar imgh"><img src="IMG/Arboles/arbol (2).jpeg" alt=""></div>
                     </div>
+                </div>
             </div>
-
-
-        </div> 
-
-        <!-- Botones -->
-        <div class="slider__btn slider__btn_r" id="btn_r2"><</div>
-        <div class="slider__btn slider__btn_l" id="btn_l2">></div>
-    </section>
+        
+            <div class="mySlides2 fade">
+                <div class="NS">
+                    <div class="sld_sec2">
+                        <div class="autoar"><img src="IMG/Arboles/arbol (2).jpg" alt=""></div>
+                        <div class="autoar imgh"><img src="IMG/Arboles/arbol (3).jpeg" alt=""></div>
+                        <div class="autoar imgh"><img src="IMG/Arboles/arbol (4).jpg" alt=""></div> 
+                    </div>
+                </div>
+            </div>
+        
+            <div class="mySlides2 fade">
+                <div class="NS">
+                    <div class="sld_sec2">
+                        <div class="autoar"><img src="IMG/Arboles/arbol (5).jpg" alt=""></div>   
+                        <div class="autoar imgh"><img src="IMG/Arboles/arbol (6).jpg" alt=""></div> 
+                        <div class="autoar imgh"><img src="IMG/Arboles/arbol (7).jpg" alt=""></div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="mySlides2 fade">
+                <div class="NS">
+                    <div class="sld_sec2">
+                        <div class="autoar"><img src="IMG/Arboles/arbol (2).jpg" alt=""></div>
+                        <div class="autoar imgh"><img src="IMG/Arboles/arbol (3).jpeg" alt=""></div>
+                        <div class="autoar imgh"><img src="IMG/Arboles/arbol (4).jpg" alt=""></div> 
+                    </div>
+                </div>
+            </div>
+        
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides2(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides2(1)">&#10095;</a>
+        </div>
+        <br>
+        
+        <!-- The dots/circles -->
+        <div style="text-align:center">
+            <span class="dot2" onclick="currentSlide2(1)"></span>
+            <span class="dot2" onclick="currentSlide2(2)"></span>
+            <span class="dot2" onclick="currentSlide2(3)"></span>
+            <span class="dot2" onclick="currentSlide2(4)"></span>
+        </div>
+    
+    </Section>
 
     <section class="contenedor">
         <div class="iconoszv">
@@ -235,6 +266,6 @@
 
     </section>
 
-    <script src="JS/sld.js"></script>
+    <script src="JS/NS2.js"></script>
 </body>
 </html>
