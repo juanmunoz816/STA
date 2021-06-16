@@ -379,6 +379,10 @@ p.card{
     max-width: 1200px;
 }
 
+.superior{
+    z-index: 4;
+}
+
 .botonesbusqueda{
     display: flex;
     flex-wrap: wrap;
@@ -599,6 +603,10 @@ section div iframe{
     .titulo2 div h1{
         font-size: 35px;
         font-weight: bold;
+    }
+
+    .mc{
+        text-align: center;
     }
 
     .lineas{
