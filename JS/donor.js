@@ -120,7 +120,7 @@ month.click(async (e) =>{
 function generateExcel() {
     if (excelData.error == null) {
         if(window.Blob && (window.URL || window.webkitURL)){
-            var contenido = "",
+            var contenido = "Cedula;Nombre;Apellido\n",
 			d = new Date(),
 			blob,
 			reader,
