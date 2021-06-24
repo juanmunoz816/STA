@@ -1,5 +1,6 @@
 const treeBtnSearch = $('#btn-busquedaarbol')
 const treeCodeInput = $('#busquedaarbol')
+const btnPostal = $('#btn-postal')
 
 // Form DOM Elements
 const treeFrom = $('#tu_arbol_form')
@@ -158,7 +159,7 @@ treeBtnSearch.click(async (e) => {
   $('.wizard-progress .step.in-progress').removeClass('in-progress')
 
   try {
-    const rawData = await fetch(`https://corsanywherepopbumps.herokuapp.com/https://amazongear-dot-saving-the-amazon-155216.appspot.com/index.php/products/?access=$1$IVPdhs1n$0uv9Se71A9giLfnL/AceV/&search=${searchParam}&active=y`, {
+    const rawData = await fetch(`https://corsanywherepopbumps.herokuapp.com/https://amazongear-dot-saving-the-amazon-155216.appspot.com/index.php/products/?access=$P$BmviOxEjrFcEfV5XxHSFDqI2fmglXf0&search=${searchParam}&active=y&id_product_group=367`, {
       method: 'GET',
     });
     const data = await rawData.json()
@@ -180,6 +181,7 @@ treeBtnSearch.click(async (e) => {
     selectedTree = trees[selectedTreeIndex]
 
     if (trees.length > 1) treeArrows.css('opacity', '1')
+    btnPostal.attr('href', 'https://admin.myorbe.com/wp-content/themes/amazon-admin/templates/certificados/letter_photos.php?lang=es&id_product=' +selectedTree.id)
 
     getTreeImages(trees[0].id)
     updateTreeCard(trees[0])
