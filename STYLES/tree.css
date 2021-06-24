@@ -9,8 +9,7 @@
   }
   
   #saving_tu_arbol .row.map-row {
-    height: 100%;
-    min-height: 100vh;
+    height: 800px;
     align-items: stretch;
   }
   
@@ -158,6 +157,18 @@
 
     #saving_tu_arbol .sentence {
       margin-top: 500px;
+    }
+
+    .card_body{
+      max-width: 100%;
+    }
+
+    .data_col.hidden{
+      margin-top: 100px;
+    }
+
+    .row.map-row{
+      height: 1200px;
     }
   }
   
