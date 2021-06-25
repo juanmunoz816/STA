@@ -142,7 +142,7 @@
   
   @media (max-width: 600px) {
     #saving_tu_arbol .row.map-row {
-      flex-direction: column;
+      display: block;
     }
     #saving_tu_arbol .row.map-row .col {
       width: 100%;
@@ -150,9 +150,6 @@
     }
     #saving_tu_arbol .row.map-row .data_col {
       padding: 2rem 0;
-    }
-    #saving_tu_arbol .row.map-row .map_col {
-      height: 500px;
     }
 
     #saving_tu_arbol .sentence {
@@ -170,7 +167,12 @@
     .row.map-row{
       height: 1200px;
     }
+
+    .progress_row{
+      margin-top: 500px;
+    }
   }
+  
   
   #saving_tu_arbol .progress_row {
     display: none;
