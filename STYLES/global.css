@@ -719,6 +719,10 @@ section div iframe{
     .iconos_arbol{
         font-size: 12px;
     }
+
+    .videohome div{
+        width: 300px;
+    }
     
 }
 
@@ -917,4 +921,12 @@ section div iframe{
     margin: auto 20px;
     width: 250px;
     max-height: 300px;
+}
+
+
+.videohome div{
+    display: flex;
+    width: 100%;
+    margin: auto;
+    justify-items: center;
 }
