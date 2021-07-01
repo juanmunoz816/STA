@@ -5,6 +5,7 @@ const btnPostal = $('#btn-postal')
 // Form DOM Elements
 const treeFrom = $('#tu_arbol_form')
 const dataColumn = $('#saving_tu_arbol .data_col')
+const contenMapPhoto = $('#saving_tu_arbol .row.map-row')
 // let treeCodeInput = $('#tu_arbol_code')
 
 // Modifiable DOM Elements
@@ -38,6 +39,42 @@ let selectedTreeImages = []
 let selectedTreeImageIndex = 0
 let trees = []
 let language = window.location.pathname.split('/').includes('en') ? 1 : 0
+
+
+var slideIndex2 = 1;
+showSlides2(slideIndex2);
+
+// Next/previous controls
+function plusSlides2(n) {
+  showSlides2(slideIndex2 += n);
+}
+
+// Thumbnail image controls
+function currentSlide2(n) {
+  showSlides2(slideIndex2= n);
+}
+
+
+function showSlides2(n) {
+  var i;
+  var slides2 = document.getElementsByClassName("mySlides2");
+  var dots = document.getElementsByClassName("dot2");
+  if (n > slides2.length) {slideIndex2 = 1}
+  if (n < 1) {slideIndex2 = slides2.length}
+  for (i = 0; i < slides2.length; i++) {
+      slides2[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides2[slideIndex2-1].style.display = "block";
+  dots[slideIndex2-1].className += " active";
+
+}
+
+setInterval(function(){
+    plusSlides2(1);
+}, 5000);
 
 // Get tree images from the server
 const getTreeImages = async (treeId) => {
@@ -159,7 +196,7 @@ treeBtnSearch.click(async (e) => {
   $('.wizard-progress .step.in-progress').removeClass('in-progress')
 
   try {
-    const rawData = await fetch(`https://corsanywherepopbumps.herokuapp.com/https://amazongear-dot-saving-the-amazon-155216.appspot.com/index.php/products/?access=$P$BmviOxEjrFcEfV5XxHSFDqI2fmglXf0&search=${searchParam}&active=y&id_product_group=367`, {
+    const rawData = await fetch(`https://corsanywherepopbumps.herokuapp.com/https://amazongear-dot-saving-the-amazon-155216.appspot.com/index.php/products/?access=$P$BmviOxEjrFcEfV5XxHSFDqI2fmglXf0&search=${searchParam}&active=y&id_product_group=490`, {
       method: 'GET',
     });
     const data = await rawData.json()
@@ -208,11 +245,14 @@ const updateTreeCard = (tree) => {
   treePlatingDate.html(formatDate(new Date(tree.planting_date)))
 
 
-  initMap(5, { lat: parseInt(selectedTree.latitude), lng: parseInt(selectedTree.longitude) }, true)
+  initMap(5, { lat: parseInt(selectedTree.latitude), lng: parseInt(selectedTree.longitude) }, true, true)
   dataColumn.css({
     'max-width': '50%',
     'opacity': '1',
     'max-height': '100%'
+  })
+  contenMapPhoto.css({
+    'height': '800px'
   })
 }
 
@@ -279,15 +319,17 @@ document.head.appendChild(script);
 (function (exports) {
   "use strict";
 
-  function initMap(zoom = 3, center = { lat: 1, lng: -70 }, marker = false) {
-    exports.map = new google.maps.Map(document.getElementById("map"), {
-      center: center,
-      zoom: zoom,
-      mapTypeId: 'satellite',
-      disableDefaultUI: true,
-      maxZoom: 15
-    });
-
+  function initMap(zoom = 3, center = { lat: 1, lng: -70 }, marker = false, show = false) {
+    if (show) {
+      exports.map = new google.maps.Map(document.getElementById("map"), {
+        center: center,
+        zoom: zoom,
+        mapTypeId: 'satellite',
+        disableDefaultUI: true,
+        maxZoom: 15
+      });
+    }
+    
     if (marker) {
       const marker = new google.maps.Marker({
         position: center,

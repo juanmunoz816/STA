@@ -28,7 +28,7 @@ async function getTop() {
 function mapTop() {
     let li  = ''
     if (dataTop.error != null) {
-        li = '<li class="lista"> No tenemos donates este mes</li>'
+        li = '<li class="lista"> No tenemos donantes este mes</li>'
     }else{
         $.each(dataTop, function (i, item) {
             li = li + '<li class="lista"> '+item.document_number + ' - ' + item.firstname.concat(' ', item.lastname) +'</li>'
