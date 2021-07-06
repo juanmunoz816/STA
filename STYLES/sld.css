@@ -98,14 +98,10 @@
         display: none;
     }
 
-}
-
-@media screen and (max-width: 400px){
-
     .sld_sec p {
 
         width: 200px;
 
     }
-
 }
+
