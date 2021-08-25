@@ -760,12 +760,12 @@ section div iframe{
     display: inline;
     margin: 0.7rem;
     color: #0E5E33;
+    cursor: pointer;
 
 }
 
-.li-moth :hover{
+.ul-month li:hover{
     cursor: pointer !important;
-    color: aqua;
 }
 .year-select{
     width: 100%;
