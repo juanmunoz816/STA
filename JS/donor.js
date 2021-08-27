@@ -30,8 +30,10 @@ function mapTop() {
     if (dataTop.error != null) {
         li = '<li class="lista"> No tenemos donantes este mes</li>'
     }else{
+        number = 0;
         $.each(dataTop, function (i, item) {
-            li = li + '<li class="lista"> '+item.document_number + ' - ' + item.firstname.concat(' ', item.lastname) +'</li>'
+            number ++  
+            li = li + '<li class="lista"> '+number+ '. ' + item.firstname.concat(' ', item.lastname) +'</li>'
         });
     }
        
